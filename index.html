@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido 
+    <meta http-equiv="refresh" content="10" />
+    -->
+
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <!-- <script src="https://kit.fontawesome.com/2ad58faca7.js" crossorigin="anonymous"></script> -->
+
+
+
+
+    <!-- cdnjs -->
+    <!-- font-awesome -->
+    <!-- https://cdnjs.com/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Flexbox</title>
+
+</head>
+
+
+<body>
+
+    <!-- contenedor header -->
+    <header>
+        <a href="#" class="logo"><span>Zoë</span>Store</a>
+
+
+        <!-- generamos un boton para el responsivem menu-->
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fa fa-bars"></label>
+
+
+
+
+        <!-- menu-->
+        <nav class="navbar">
+            <a href="#inicio">inicio</a>
+            <a href="#detalles">detalles</a>
+            <a href="#acercade">acercade</a>
+            <a href="#opiniones">opiniones</a>
+            <a href="#precios">precios</a>
+            <a href="#contactos">contactos</a>
+        </nav>
+    </header>
+
+
+
+    <!-- banner -->
+    <section class="inicio" id="inicio">
+        <div class="content">
+            <h3>MONSTER ABC <span>auriculares</span></h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quibusdam, inventore voluptatum atque
+                omnis doloremque quaerat maxime natus neque illo totam rerum aliquid, beatae sed! Provident minus
+                possimus sunt culpa?
+            </p>
+
+            <a href="#" class="btn">MAS DETALLES</a>
+
+        </div>
+
+        <div class="image">
+            <img src="./imagenes/audifono.png" alt="audifono" title="audifono">
+
+        </div>
+    </section>
+
+
+    <!-- detalles -->
+    <section class="detalles" id="detalles">
+        <h1 class="heading">FUNCIONES</h1>
+
+        <div class="caja-contenedor">
+            <div class="caja">
+                <img src="./imagenes/icono1.png" alt="icono1" title="icono1">
+                <h3>clasico, pero moderno</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt optio amet consectetur ducimus aut
+                    ullam aperiam quo accusantium distinctio cum, totam eos maiores, facere provident accusamus?
+                    Dignissimos temporibus sint voluptatibus?
+                </p>
+
+                <a href="#" class="btn">VER MAS</a>
+            </div>
+
+
+            <div class="caja">
+                <img src="./imagenes/icono2.png" alt="icono2" title="icono2">
+                <h3>duración de la bateria para el día</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt optio amet consectetur
+                    ducimus aut
+                    ullam aperiam quo accusantium distinctio cum, totam eos maiores, facere provident
+                    accusamus?
+                    Dignissimos temporibus sint voluptatibus?
+                </p>
+
+                <a href="#" class="btn">VER MAS</a>
+            </div>
+
+
+            <div class="caja">
+                <img src="./imagenes/icono3.png" alt="icono3" title="icono3">
+                <h3>audio mas inteligente</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt optio amet
+                    consectetur ducimus aut
+                    ullam aperiam quo accusantium distinctio cum, totam eos maiores, facere provident
+                    accusamus?
+                    Dignissimos temporibus sint voluptatibus?
+                </p>
+
+                <a href="#" class="btn">VER MAS</a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- Acerca de -->
+    <section class="acercade" id="acercade">
+        <h1 class="heading">sensor de ruido</h1>
+
+
+        <div class="columna">
+
+            <div class="image">
+                <img src="./imagenes/auriculares_2.png" alt="auriculares_2" title="auriculares_2">
+            </div>
+
+
+            <div class="content">
+                <h3>calidad de sonido excepcional</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere assumenda amet temporibus, nisi
+                    sequi soluta officia tenetur praesentium suscipit quasi, rerum nemo eveniet inventore dolore ipsa
+                    deleniti ex, odio impedit.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quia temporibus sequi, accusamus
+                    non quasi quos impedit, ullam unde laudantium ea iusto ipsa enim doloremque ut veritatis harum,
+                    minima necessitatibus.
+                </p>
+
+
+                <div class="bottons">
+                    <a href="#" class="btn">
+                        <i class="fa-brands fa-google-play">
+                            GOOGLE PLAY
+                        </i>
+                    </a>
+                    <a href="#" class="btn">
+                        <i class="fa-brands fa-apple">
+                            APPLE STORE
+                        </i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- suscribete -->
+    <div class="suscribete">
+
+        <h3>SUSCRIBETE PARA TENER MAS NOVEDADES</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero obcaecati soluta recusandae excepturi
+            inventore eaque maiores aperiam eos, nisi quis mollitia ipsum vitae perspiciatis quae, ab maxime? Ut, id ab.
+        </p>
+
+        <form action="">
+            <input type="email" placeholder="ingresa tu email">
+            <input type="submit" value="suscribete">
+        </form>
+
+    </div>
+
+
+
+    <!-- opiniones -->
+    <section class="opiniones" id="opiniones">
+        <h1 class="heading">opiniones de clientes</h1>
+
+        <div class="caja-contenedor">
+            <div class="caja">
+
+                <i class="fa-solid fa-atom"></i>
+
+                <div class="user">
+                    <img src="./imagenes/user_1.png" alt="user_1" title="user_1">
+                    <h3>Sasa</h3>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="comentarios">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium ipsa voluptas optio?
+                        Eveniet corrupti tempora eius temporibus, optio nobis obcaecati quidem expedita totam rerum
+                        beatae fugiat harum quam ab.
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="caja">
+
+                <i class="fa-solid fa-atom"></i>
+
+                <div class="user">
+                    <img src="./imagenes/user_2.png" alt="user_2" title="user_2">
+                    <h3>Sasa</h3>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <div class="comentarios">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium ipsa
+                        voluptas optio?
+                        Eveniet corrupti tempora eius temporibus, optio nobis obcaecati quidem expedita
+                        totam rerum
+                        beatae fugiat harum quam ab.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="caja">
+
+                <i class="fa-solid fa-atom"></i>
+
+                <div class="user">
+                    <img src="./imagenes/user_3.png" alt="user_3" title="user_3">
+                    <h3>Sasa</h3>
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+
+                    <div class="comentarios">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium ipsa
+                        voluptas optio?
+                        Eveniet corrupti tempora eius temporibus, optio nobis obcaecati quidem expedita
+                        totam rerum
+                        beatae fugiat harum quam ab.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- precios -->
+    <section class="precios" id="precios">
+        <h1 class="heading">planes de precios</h1>
+
+        <div class="caja-contenedor">
+            <div class="caja">
+                <h3 class="titulo">tradicionales</h3>
+
+                <div class="tipos">
+                    $70 <span>/con factura</span>
+                </div>
+
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> manos libres</li>
+                    <li><i class="fa-solid fa-check"></i> resistentes al agua</li>
+                    <li><i class="fa-solid fa-xmark"></i> extra bass</li>
+                    <li><i class="fa-solid fa-xmark"></i> cancelación de ruido</li>
+                </ul>
+
+                <a href="#" class="btn">compra ya!!!</a>
+
+            </div>
+
+
+            <div class="caja">
+                <h3 class="titulo">diadema</h3>
+
+                <div class="tipos">
+                    $70 <span>/con factura</span>
+                </div>
+
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> manos libres</li>
+                    <li><i class="fa-solid fa-check"></i> resistentes al agua</li>
+                    <li><i class="fa-solid fa-check"></i> extra bass</li>
+                    <li><i class="fa-solid fa-xmark"></i> cancelación de ruido</li>
+                </ul>
+
+                <a href="#" class="btn">compra ya!!!</a>
+
+            </div>
+
+
+            <div class="caja">
+                <h3 class="titulo">inalámbrico</h3>
+
+                <div class="tipos">
+                    $70 <span>/con factura</span>
+                </div>
+
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> manos libres</li>
+                    <li><i class="fa-solid fa-check"></i> resistentes al agua</li>
+                    <li><i class="fa-solid fa-check"></i> extra bass</li>
+                    <li><i class="fa-solid fa-check"></i> cancelación de ruido</li>
+                </ul>
+
+                <a href="#" class="btn">compra ya!!!</a>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- contacto -->
+    <section class="contactos" id="contactos">
+        <div class="image">
+            <img src="./imagenes/form_img.png" alt="form_img" title="form_img">
+        </div>
+
+        <form action="">
+            <h1 class="heading">contactos</h1>
+
+            <div class="inputcaja">
+                <input type="text" required>
+                <label for="">nombre</label>
+            </div>
+
+            <div class="inputcaja">
+                <input type="email" required>
+                <label for="">email</label>
+            </div>
+
+
+            <div class="inputcaja">
+                <input type="number" required>
+                <label for="">telefono</label>
+            </div>
+
+
+            <div class="inputcaja">
+                <textarea name="" id="" required cols="30" rows="10">
+
+                </textarea>
+
+                <label for="">mensaje</label>
+
+            </div>
+
+            <input type="submit" class="btn" value="ENVIAR">
+
+
+        </form>
+
+    </section>
+
+
+    <!-- contacto -->
+    <div class="footer">
+        <div class="caja-contenedor">
+            <div class="caja">
+                <h3>noticias e informacion</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex commodi qui iure eligendi delectus,
+                    labore velit suscipit repudiandae explicabo similique maiores consectetur voluptas alias, saepe eius
+                    harum laborum. Quasi, vero.
+                </p>
+            </div>
+
+
+            <div class="caja">
+                <h3>buscanos en</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">pinterest</a>
+                <a href="#">twitter</a>
+            </div>
+
+
+            <div class="caja">
+                <h3>mas informacion</h3>
+
+                <div class="info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>
+                        123-456-789 <br>798-444-521
+                    </p>
+
+                </div>
+
+                <div class="info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>
+                        correo1@miempresa.com <br>correo2@miempresa.com
+                    </p>
+                </div>
+
+
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                        Lorem ipsum dolor <br>666 666
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="creditos">
+            &copy, copyright@2024 93R50N
+        </h1>
+
+    </div>
+
+
+
+</body>
+
+</html>
